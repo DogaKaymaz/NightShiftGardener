@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class SpotCharacter : MonoBehaviour
 {
-    public Action <CharacterMovement> characterSpotted;
+    [HideInInspector] public Action <CharacterBehaviour> characterSpotted;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out CharacterMovement character))
+        if (other.TryGetComponent(out CharacterBehaviour character))
         {
             characterSpotted?.Invoke(character);
         }

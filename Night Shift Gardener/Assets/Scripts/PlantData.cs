@@ -1,23 +1,25 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "PlantData", menuName = "Scriptable Objects/PlantData")]
 public class PlantData : ScriptableObject
 {
     public string plantName;
+    public Sprite[] growStagesSprites;
+    public Sprite decaySprite;
     [SerializeField] private float growingTime;
-    [SerializeField] private  float growingModifier = 1f;
     [SerializeField] private  float decayTime;
-    [SerializeField] private  float decayModifier = 1f;
+    
 
     
-    public float GetGrowingTime()
+    public float GetGrowingTime(float growingModifier)
     {
-        return growingModifier * growingTime;
+        return growingTime / growingModifier;
     }
     
-    public float GetDecayTime()
+    public float GetDecayTime(float decayModifier)
     {
-        return decayModifier * decayTime;
+        return decayModifier / decayTime;
     }
 }
  

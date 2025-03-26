@@ -1,26 +1,46 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlantingSpot : MonoBehaviour
 {
-    private Seed _seed;
-    private bool _hasSeed;
-    private bool _isSeedThirsty;
-    private bool _isHarvestable;
+    // [SerializeField] private Seed seed;
+    [SerializeField] private PlantBehaviour plantBehaviour;
+    [SerializeField] private PlantData plantData;
+    // private bool _hasSeed;
 
-    private Seed PlantSeed(Seed seed)
+    private void Start()
     {
-        if (_hasSeed) return null;
-        _seed = seed;
-        Instantiate(_seed, transform);
-        StartCoroutine(StartSeedGrowing());
-        return _seed;
+        PlantSeed(plantBehaviour.plantData);
     }
 
-    private IEnumerator StartSeedGrowing()
+    public void PlantSeed(PlantData plantData)
     {
-        yield return new WaitForSeconds(_seed.plantData.GetGrowingTime());
+        // if (_hasSeed) return;
+        // this.seed = seed;
+
+        this.plantData = plantData;
+        var newPlant = Instantiate(plantBehaviour, transform);
+        newPlant.plantData = this.plantData;
+        newPlant.InitializePlant(this.plantData);
+        newPlant.getHarvested += OnGetHarvested;
+
+        // this.plantData = plantBehaviour.plantData;
+        // this.plantBehaviour = plantBehaviour;
+        // var newPlant = Instantiate(plantBehaviour, transform);
+        // newPlant.plantData = plantData;
+        // plantBehaviour.InitializePlant(this.plantBehaviour.plantData);
+        // plantBehaviour.getHarvested += OnGetHarvested;
+
+
+        // seed.DestroySeed();
     }
-    
+
+    private void OnGetHarvested(PlantBehaviour plant)
+    {
+        plant.getHarvested -= OnGetHarvested;
+        Debug.Log("start growing " + plant.plantData.name);
+        PlantSeed(plant.plantData);
+    }
 }

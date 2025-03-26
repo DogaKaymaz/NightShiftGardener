@@ -13,5 +13,13 @@ MonoBehaviour:
   m_Name: Corn
   m_EditorClassIdentifier: 
   plantName: Corn
-  growingTime: 75
+  growStagesSprites:
+  - {fileID: -511191350, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  - {fileID: -1696373828, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  - {fileID: -958432325, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  - {fileID: 683449792, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  - {fileID: 809193580, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  - {fileID: -1678574718, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  decaySprite: {fileID: -2052950026, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  growingTime: 30
   decayTime: 75
