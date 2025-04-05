@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class PlantBehaviour : InventoryItem
+public class PlantBehaviour : MonoBehaviour
 {
     public PlantData plantData;
     // [SerializeField] private SpotCharacter spotCharacter;
@@ -25,7 +25,7 @@ public class PlantBehaviour : InventoryItem
     public void Harvest()
     {
         getHarvested?.Invoke(this);
-        DestroyItem();
+        Destroy(this.gameObject);
     }
 
     public void Water()
@@ -46,7 +46,6 @@ public class PlantBehaviour : InventoryItem
     {
         if (plant == null) return null;
         plantData = plant;
-        itemName = plantData.name;
         _isGrowing = true;
         isWatered = false;
         

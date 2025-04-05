@@ -10,11 +10,11 @@ public class OverallUIController : MonoBehaviour
     private void Start()
     {
         characterBehaviour.characterInteractedPlant += OnCharacterInteractedPlant;
-        characterBehaviour.characterExitPlant += OnCharacterExitPlant;
-        OnCharacterExitPlant();
+        characterBehaviour.characterExitTrigger += OnCharacterExitPlant;
+        OnCharacterExitPlant(this.gameObject);
     }
 
-    private void OnCharacterExitPlant()
+    private void OnCharacterExitPlant(GameObject obj)
     {
         text.enabled = false;
     }

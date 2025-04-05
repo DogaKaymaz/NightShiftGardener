@@ -5,9 +5,11 @@ public class CharacterBehaviour : MonoBehaviour
 {
     public InventoryManager inventoryManager;
     private PlantBehaviour _currentPlant;
-    public Action<PlantBehaviour> characterInteractedPlant;
-    public Action characterExitPlant;
+    public Action<GameObject> characterExitTrigger;
 
+    public Action<PlantBehaviour> characterInteractedPlant;
+    public Action<TraderBehaviour> characterInteractedTrader;
+    
     // private void OnTriggerEnter2D(Collider2D other)
     // {
     //     if (other.TryGetComponent(out InventoryItem item))
@@ -24,6 +26,11 @@ public class CharacterBehaviour : MonoBehaviour
             _currentPlant = plant;
             characterInteractedPlant?.Invoke(_currentPlant);
         }
+
+        if (other.TryGetComponent(out TraderBehaviour trader))
+        {
+            characterInteractedTrader?.Invoke(trader);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other) 
@@ -31,7 +38,7 @@ public class CharacterBehaviour : MonoBehaviour
         if (other.TryGetComponent(out PlantBehaviour plant) && plant == _currentPlant) 
         {
             _currentPlant = null;
-            characterExitPlant?.Invoke();
+            characterExitTrigger?.Invoke(other.gameObject);
         }
     }
     
@@ -42,14 +49,14 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (_currentPlant.isHarvestable)
             { 
-                inventoryManager.TryAddItem(_currentPlant.itemName, 1); 
-                Debug.Log(_currentPlant.itemName + " Added to the Inventory"); 
+                inventoryManager.TryAddItem(_currentPlant.plantData.GetItemID(), 1); 
+                Debug.Log(_currentPlant.plantData.plantName + " Added to the Inventory"); 
                 _currentPlant.Harvest();
                 return;
             }
             _currentPlant.Water();
             characterInteractedPlant?.Invoke(_currentPlant);
-            Debug.Log(_currentPlant.itemName + " watered!");
+            Debug.Log(_currentPlant.plantData.plantName + " watered!");
         }
     }
 }
