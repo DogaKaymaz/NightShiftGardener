@@ -1,11 +1,11 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TraderBehaviour : MonoBehaviour
 {
     [SerializeField] private InventoryManager inventoryManager;
     public Action<InventoryItem> tradeHappened;
+    public Action traderInteractedCharacter;
     
     public bool TryTrade(InventoryItem inventoryItem, string id, int amount)
     {
@@ -16,5 +16,20 @@ public class TraderBehaviour : MonoBehaviour
         }
         
         return false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out CharacterBehaviour character))
+        {
+            traderInteractedCharacter?.Invoke();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out CharacterBehaviour character))
+        {
+            traderInteractedCharacter?.Invoke();
+        }
     }
 }
