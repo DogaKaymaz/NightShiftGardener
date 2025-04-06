@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eda3eea05ef5ac468ef851ba50c859b, type: 3}
   m_Name: Corn
   m_EditorClassIdentifier: 
-  plantName: Corn
+  itemName: Corn
+  itemIcon: {fileID: -1678574718, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  itemQuality: 0
+  itemQualityModifier: 2
+  itemBasePrice: 10
   growStagesSprites:
   - {fileID: -511191350, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
   - {fileID: -1696373828, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
@@ -23,3 +27,4 @@ MonoBehaviour:
   decaySprite: {fileID: -2052950026, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
   growingTime: 30
   decayTime: 75
+  resultSprites: []

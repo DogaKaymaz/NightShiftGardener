@@ -3,19 +3,20 @@ using UnityEngine.Serialization;
 
 public class InventoryItem : ScriptableObject
 {
-    [SerializeField] private int itemID;
+    [SerializeField] private string itemName;
+    [SerializeField] private Sprite itemIcon;
     [SerializeField] private ItemQuality itemQuality;
     [SerializeField] private float itemQualityModifier = 2f;
     [SerializeField] private float itemBasePrice;
     
 
-    public string GetItemID()
+    public string GetItemName()
     {
-        return itemID.ToString();
+        return itemName;
     }
-    public int GetItemIDint()
+    public Sprite GetItemIcon()
     {
-        return itemID;
+        return itemIcon;
     }
     public ItemQuality GetItemQuality()
     {

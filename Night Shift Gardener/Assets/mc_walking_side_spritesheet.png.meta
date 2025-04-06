@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mc_walking_side_spritesheet_0: -3936107097833497429
+      mc_walking_side_spritesheet_1: -2237127461899044886
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

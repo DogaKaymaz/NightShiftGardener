@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eda3eea05ef5ac468ef851ba50c859b, type: 3}
   m_Name: Rose
   m_EditorClassIdentifier: 
-  plantName: Rose
+  itemName: Rose
+  itemIcon: {fileID: -2052950026, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  itemQuality: 0
+  itemQualityModifier: 2
+  itemBasePrice: 50
   growStagesSprites:
   - {fileID: -2063030480, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
   - {fileID: -2092371456, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
@@ -23,3 +27,4 @@ MonoBehaviour:
   decaySprite: {fileID: 0}
   growingTime: 50
   decayTime: 50
+  resultSprites: []

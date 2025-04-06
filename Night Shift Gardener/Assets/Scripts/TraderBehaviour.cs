@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TraderBehaviour : MonoBehaviour
@@ -7,7 +8,7 @@ public class TraderBehaviour : MonoBehaviour
     public Action<InventoryItem> tradeHappened;
     public Action traderInteractedCharacter;
     
-    public bool TryTrade(InventoryItem inventoryItem, string id, int amount)
+    public bool TryTrade(InventoryItem inventoryItem, InventoryItem id, int amount)
     {
         if (inventoryManager.TrySpend(id, amount))
         {
@@ -16,6 +17,11 @@ public class TraderBehaviour : MonoBehaviour
         }
         
         return false;
+    }
+
+    public Dictionary<InventoryItem, int> GetInventory()
+    {
+        return inventoryManager.GetInventory();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

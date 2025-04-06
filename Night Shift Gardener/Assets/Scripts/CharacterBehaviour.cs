@@ -49,14 +49,14 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (_currentPlant.isHarvestable)
             { 
-                inventoryManager.TryAddItem(_currentPlant.plantData.GetItemID(), 1); 
-                Debug.Log(_currentPlant.plantData.plantName + " Added to the Inventory"); 
+                inventoryManager.TryAddItem(_currentPlant.plantData, 1); 
+                Debug.Log(_currentPlant.plantData.GetItemName() + " Added to the Inventory"); 
                 _currentPlant.Harvest();
                 return;
             }
             _currentPlant.Water();
             characterInteractedPlant?.Invoke(_currentPlant);
-            Debug.Log(_currentPlant.plantData.plantName + " watered!");
+            Debug.Log(_currentPlant.plantData.GetItemName() + " watered!");
         }
     }
 }

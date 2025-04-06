@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 153cb6d92525015498880aa0f49a5a9e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7249595058631784384
+    second: trader_spritesheet_0
+  - first:
+      213: 8463609704518696993
+    second: trader_spritesheet_1
+  - first:
+      213: -737059017483512
+    second: trader_spritesheet_2
+  - first:
+      213: 6197022508524252826
+    second: trader_spritesheet_3
+  - first:
+      213: 1325489161974396373
+    second: trader_spritesheet_4
+  - first:
+      213: -1541260112470942964
+    second: trader_spritesheet_5
+  - first:
+      213: 4709012225251872110
+    second: trader_spritesheet_6
+  - first:
+      213: -4901246338737837093
+    second: trader_spritesheet_7
+  - first:
+      213: -1937147873897174466
+    second: trader_spritesheet_8
+  - first:
+      213: 7033625760465264039
+    second: trader_spritesheet_9
+  - first:
+      213: -7177835896565910257
+    second: trader_spritesheet_10
+  - first:
+      213: -4539396621235253696
+    second: trader_spritesheet_11
+  - first:
+      213: -465349320286330856
+    second: trader_spritesheet_12
+  - first:
+      213: -2458455214746677545
+    second: trader_spritesheet_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: trader_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 906
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63aac406ece29704083c13cd516c362b
+      internalID: 2095762277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 906
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28645432ca3152040bdc3fea5fb5b574
+      internalID: 50711619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 906
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ad2f1e92bc0b2439dbbb6949ededfa
+      internalID: 1703090613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 906
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc30b359c5071564bb3c14b564068221
+      internalID: 1740178116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 604
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dea2d047fc5c64da573e795a0ee893
+      internalID: -1128187240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 604
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7598379f6dacc94e82d0216f21dccab
+      internalID: -271364208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 604
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e693fe33b40dc44b891b9ca2ad56e30
+      internalID: -1993591918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 604
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84851b735216f9740844b39d4a9559c9
+      internalID: 1797677617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 302
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f34a0f81c729744384ae8b65bf66233
+      internalID: -899464369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 302
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2310b3f316a13564faa97d32383db084
+      internalID: 415740995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 302
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cb52951587e2f4c83975a416300bad
+      internalID: 787908039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 302
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3f9bf315330a9489c5b2dcb02bfe52
+      internalID: 1168591613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a857865fe076c7c46aff5c106616dba9
+      internalID: 1452319636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trader_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 0
+        width: 302
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cb49e8354d38048b806587867071f5
+      internalID: -135495029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 062ab582eff1c0c4a8328271ab7f2b96
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      trader_spritesheet_0: 2095762277
+      trader_spritesheet_1: 50711619
+      trader_spritesheet_10: 787908039
+      trader_spritesheet_11: 1168591613
+      trader_spritesheet_12: 1452319636
+      trader_spritesheet_13: -135495029
+      trader_spritesheet_2: 1703090613
+      trader_spritesheet_3: 1740178116
+      trader_spritesheet_4: -1128187240
+      trader_spritesheet_5: -271364208
+      trader_spritesheet_6: -1993591918
+      trader_spritesheet_7: 1797677617
+      trader_spritesheet_8: -899464369
+      trader_spritesheet_9: 415740995
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

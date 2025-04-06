@@ -6,19 +6,19 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     [SerializeField] private List<InventoryEntry> ownedItems;
-    private Dictionary<string, int> inventoryItems = new Dictionary<string, int>();
-    public Action<string> inventoryUpdated;
+    private Dictionary<InventoryItem, int> inventoryItems = new Dictionary<InventoryItem, int>();
+    public Action<InventoryItem> inventoryUpdated;
 
     private void Start()
     {
         foreach (InventoryEntry entry in ownedItems)
         {
             if (entry.item == null) continue;
-            TryAddItem(entry.item.GetItemID(), entry.amount);
+            TryAddItem(entry.item, entry.amount);
         }
     }
 
-    public bool TryAddItem(string key, int amount)
+    public bool TryAddItem(InventoryItem key, int amount)
     {
         if (inventoryItems.TryGetValue(key, out int currentAmount))
         {
@@ -33,7 +33,7 @@ public class InventoryManager : MonoBehaviour
         return true;
     }
 
-    public bool TrySpend(string key, int amount)
+    public bool TrySpend(InventoryItem key, int amount)
     {
         if (inventoryItems.TryGetValue(key, out int currentAmount) && currentAmount >= amount)
         {
@@ -43,7 +43,7 @@ public class InventoryManager : MonoBehaviour
         return false;
     }
     
-    public Dictionary<string, int> GetInventory()
+    public Dictionary<InventoryItem, int> GetInventory()
     {
         return inventoryItems;
     }

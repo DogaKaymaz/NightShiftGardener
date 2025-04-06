@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eda3eea05ef5ac468ef851ba50c859b, type: 3}
   m_Name: Watermelon
   m_EditorClassIdentifier: 
-  plantName: Watermelon
+  itemName: Watermelon
+  itemIcon: {fileID: 634128143, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
+  itemQuality: 0
+  itemQualityModifier: 2
+  itemBasePrice: 0
   growStagesSprites:
   - {fileID: 222652403, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
   - {fileID: -114537118, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
@@ -23,3 +27,4 @@ MonoBehaviour:
   decaySprite: {fileID: 0}
   growingTime: 10
   decayTime: 10
+  resultSprites: []
