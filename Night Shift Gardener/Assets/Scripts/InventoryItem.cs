@@ -1,46 +1,42 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class InventoryItem : ScriptableObject
+[System.Serializable]
+public class InventoryItem
 {
-    [SerializeField] private string itemName;
-    [SerializeField] private Sprite itemIcon;
-    [SerializeField] private ItemQuality itemQuality;
-    [SerializeField] private float itemQualityModifier = 2f;
-    [SerializeField] private float itemBasePrice;
-    
-
-    public string GetItemName()
+    public ItemData itemData;
+    public ItemQualityData itemQualityData; 
+    private ItemQuality _itemQuality; 
+    public int amount;
+    private bool _qualityUpgraded = false;
+    public string GetIdemID()
     {
-        return itemName;
+        SetItemQuality();
+        return itemData.name + "_" + _itemQuality;
     }
-    public Sprite GetItemIcon()
+    public void SetItemQuality(ItemQuality targetQuality)
     {
-        return itemIcon;
+        _itemQuality = targetQuality;
+        _qualityUpgraded = true;
+    }
+    private void SetItemQuality()
+    {
+        if(_qualityUpgraded) return;
+        _itemQuality = itemQualityData != null ? itemQualityData.itemQuality : default;
     }
     public ItemQuality GetItemQuality()
     {
-        return itemQuality;
+        SetItemQuality();
+        return _itemQuality;
     }
     public void ImproveQuality()
     {
-        if (itemQuality < ItemQuality.Legendary)
-            itemQuality++;
+        if (itemQualityData.itemQuality < ItemQuality.Legendary)
+            _itemQuality++;
     }
     public void DegradeQuality()
     {
-        if (itemQuality > ItemQuality.Poor)
-            itemQuality--;
-    }
-    public float GetItemPrice()
-    {
-        return itemBasePrice + (itemQualityModifier * (float)itemQuality);
-    }
-    public enum ItemQuality
-    {
-        Poor = 0,
-        Common = 1,
-        Epic = 2,
-        Legendary = 3
+        if (itemQualityData.itemQuality > ItemQuality.Poor)
+            _itemQuality--;
     }
 }

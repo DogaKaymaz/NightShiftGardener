@@ -1,8 +1,8 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-[CreateAssetMenu(fileName = "PlantData", menuName = "Scriptable Objects/PlantData")]
-public class PlantData : InventoryItem
+[CreateAssetMenu(fileName = "PlantData", menuName = "Scriptable Objects/Items/PlantData")]
+public class PlantData : ItemData
 {
     public Sprite[] growStagesSprites;
     public Sprite decaySprite;

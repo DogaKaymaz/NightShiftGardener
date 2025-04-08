@@ -49,7 +49,7 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (_currentPlant.isHarvestable)
             { 
-                inventoryManager.TryAddItem(_currentPlant.plantData, 1); 
+                // inventoryManager.AddItem(_currentPlant, 1); 
                 Debug.Log(_currentPlant.plantData.GetItemName() + " Added to the Inventory"); 
                 _currentPlant.Harvest();
                 return;

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Grapes
   itemIcon: {fileID: 1762179395, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
-  itemQuality: 0
+  itemQuality: 1
   itemQualityModifier: 2
   itemBasePrice: 35
   growStagesSprites:

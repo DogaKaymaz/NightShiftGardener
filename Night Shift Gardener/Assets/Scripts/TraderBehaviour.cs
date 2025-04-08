@@ -19,9 +19,9 @@ public class TraderBehaviour : MonoBehaviour
         return false;
     }
 
-    public Dictionary<InventoryItem, int> GetInventory()
+    public List<InventoryItem> GetInventory()
     {
-        return inventoryManager.GetInventory();
+        return inventoryManager.ownedItems;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

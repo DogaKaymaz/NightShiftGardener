@@ -1,57 +1,41 @@
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    [SerializeField] private List<InventoryEntry> ownedItems;
-    private Dictionary<InventoryItem, int> inventoryItems = new Dictionary<InventoryItem, int>();
+    public List<InventoryItem> ownedItems;
     public Action<InventoryItem> inventoryUpdated;
+    
 
-    private void Start()
+    public void AddItem(InventoryItem item, int amount)
     {
-        foreach (InventoryEntry entry in ownedItems)
+        InventoryItem ownedItem = ownedItems.Find(x => x.GetIdemID() == item.GetIdemID());
+
+        if (ownedItem == null)
         {
-            if (entry.item == null) continue;
-            TryAddItem(entry.item, entry.amount);
+            ownedItems.Add(item);
+            item.amount = amount;
+            inventoryUpdated?.Invoke(item);
+        }
+        else
+        {
+            ownedItem.amount += amount;
+            inventoryUpdated?.Invoke(ownedItem);
         }
     }
 
-    public bool TryAddItem(InventoryItem key, int amount)
+    public bool TrySpend(InventoryItem item, int amount)
     {
-        if (inventoryItems.TryGetValue(key, out int currentAmount))
+        var ownedItem = ownedItems.Find(x => x.GetIdemID() == item.GetIdemID());
+
+        if (ownedItem != null && ownedItem.amount >= amount)
         {
-            inventoryItems[key] = currentAmount + amount;
-            inventoryUpdated?.Invoke(key);
+            ownedItem.amount -= amount;
+            inventoryUpdated?.Invoke(ownedItem);
             return true;
         }
 
-        if (!inventoryItems.TryAdd(key, amount)) return false;
-        
-        inventoryUpdated?.Invoke(key);
-        return true;
-    }
-
-    public bool TrySpend(InventoryItem key, int amount)
-    {
-        if (inventoryItems.TryGetValue(key, out int currentAmount) && currentAmount >= amount)
-        {
-            inventoryItems[key] -= amount;
-            return true;
-        }
         return false;
-    }
-    
-    public Dictionary<InventoryItem, int> GetInventory()
-    {
-        return inventoryItems;
-    }
-    
-    [System.Serializable]
-    protected class InventoryEntry
-    {
-        public InventoryItem item;
-        public int amount = 1;
     }
 }

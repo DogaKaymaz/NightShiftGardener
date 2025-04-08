@@ -7,6 +7,6 @@ public class Seed : InventoryItem
     
     public void DestroySeed()
     {
-        Destroy(this);
+        // Destroy(this);
     }
 }
