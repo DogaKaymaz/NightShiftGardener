@@ -39,12 +39,12 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             PlantingSpot spot = hit.collider.GetComponent<PlantingSpot>();
             if (spot != null)
             {
-                if (inventoryItem.itemData is PlantData plantData)
-                {
-                    spot.PlantSeed(plantData, inventoryItem.itemQualityData);
-                    GameManager.mcInventoryManager.TrySpend(inventoryItem, 1);
-                }
-                else if (inventoryItem.itemData is SeedData seedData)
+                // if (inventoryItem.itemData is PlantData plantData)
+                // {
+                //     spot.PlantSeed(plantData, inventoryItem.itemQualityData);
+                //     GameManager.mcInventoryManager.TrySpend(inventoryItem, 1);
+                // }
+                if (inventoryItem.itemData is SeedData seedData)
                 {
                     spot.PlantSeed(seedData.plantData, inventoryItem.itemQualityData);
                     GameManager.mcInventoryManager.TrySpend(inventoryItem, 1);

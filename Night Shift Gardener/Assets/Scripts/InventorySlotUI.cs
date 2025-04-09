@@ -23,8 +23,8 @@ public class InventorySlotUI : MonoBehaviour
         this.itemCost.SetText(itemCost);
         this.itemCostResourceVisual.sprite = itemCostResourceVisual;
 
-        draggableItem.inventoryItem = item;
-        itemAmount.SetText(item.amount.ToString());
+        if(draggableItem != null) draggableItem.inventoryItem = item; 
+        if(itemAmount != null) itemAmount.SetText(item.amount.ToString());
     }
     
     public void SetItemIcon(Sprite sprite)
