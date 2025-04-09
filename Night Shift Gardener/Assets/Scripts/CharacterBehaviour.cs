@@ -42,7 +42,6 @@ public class CharacterBehaviour : MonoBehaviour
         }
     }
     
-    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && _currentPlant != null) 

@@ -50,7 +50,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
                     GameManager.mcInventoryManager.TrySpend(inventoryItem, 1);
                 }
             }
-            rectTransform.anchoredPosition = originalPosition;
         }
+        rectTransform.anchoredPosition = originalPosition;
     }
 }
