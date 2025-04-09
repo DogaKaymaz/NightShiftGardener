@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CharacterBehaviour : MonoBehaviour
 {
-    public InventoryManager inventoryManager;
+    // public InventoryManager inventoryManager;
     private PlantBehaviour _currentPlant;
     public Action<GameObject> characterExitTrigger;
 
@@ -49,7 +49,7 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (_currentPlant.isHarvestable)
             { 
-                // inventoryManager.AddItem(_currentPlant, 1); 
+                GameManager.mcInventoryManager.AddItem(_currentPlant.GetComponent<InventoryItemInstance>().inventoryItem, 1); 
                 Debug.Log(_currentPlant.plantData.GetItemName() + " Added to the Inventory"); 
                 _currentPlant.Harvest();
                 return;

@@ -9,6 +9,8 @@ public class PlantData : ItemData
     
     [SerializeField] private float growingTime;
     [SerializeField] private  float decayTime;
+
+    public SeedData seedData;
     
     public Sprite[] resultSprites;
     

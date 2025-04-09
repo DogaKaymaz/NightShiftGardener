@@ -6,6 +6,7 @@ public class ItemData : ScriptableObject
     [SerializeField] private Sprite itemIcon;
     [SerializeField] private float itemQualityModifier = 2f;
     [SerializeField] private float itemBasePrice;
+    public ResourceType itemPriceResourceType;
     
     public string GetItemName()
     {

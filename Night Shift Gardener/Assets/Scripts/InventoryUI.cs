@@ -15,11 +15,9 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
-    public void InitializeInventoryUI(TraderBehaviour trader)
+    public void InitializeInventoryUI(List<InventoryItem> inventory)
     {
         OnInitialize();
-        
-        var inventory = trader.GetInventory();
         
         foreach (InventoryItem item in inventory)
         {
@@ -27,11 +25,18 @@ public class InventoryUI : MonoBehaviour
             
             var itemUI = Instantiate(slotPrefab, inventorySlotsParentTransform);
             itemUI.InitializeSLot(
+                item,
                 item.itemData.GetItemIcon(),
                 ItemQualityDataManager.Instance.GetSlotFrame(itemQuality),
                 item.itemData.GetItemName(),
                 itemQuality.ToString(),
-                item.itemData.GetItemPrice(itemQuality).ToString());
+                item.itemData.GetItemPrice(itemQuality).ToString(),
+                item.itemData.itemPriceResourceType.icon);
+            
+            if (item.amount <= 0)
+            {
+                Destroy(itemUI.gameObject);
+            }
         }
     }
 }

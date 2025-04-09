@@ -8,20 +8,32 @@ public class PlantingSpot : MonoBehaviour
     // [SerializeField] private Seed seed;
     [SerializeField] private PlantBehaviour plantBehaviour;
     [SerializeField] private PlantData plantData;
+    [SerializeField] private ItemQualityData plantQuality;
     // private bool _hasSeed;
 
     private void Start()
     {
-        PlantSeed(plantBehaviour.plantData);
+        if (plantData != null && plantQuality != null)
+        {
+            PlantSeed(plantBehaviour.plantData, plantQuality);
+        }
     }
 
-    public void PlantSeed(PlantData plantData)
+    public void PlantSeed(PlantData plantData, ItemQualityData qualityData)
     {
+        Debug.Log("????");
         // if (_hasSeed) return;
         // this.seed = seed;
 
+        plantBehaviour.plantData = plantData;
         this.plantData = plantData;
         var newPlant = Instantiate(plantBehaviour, transform);
+        newPlant.GetComponent<InventoryItemInstance>().inventoryItem = new InventoryItem()
+        {
+            amount = 1,
+            itemData = plantData,
+            itemQualityData = qualityData
+        };
         newPlant.plantData = this.plantData;
         newPlant.InitializePlant(this.plantData);
         newPlant.getHarvested += OnGetHarvested;
@@ -41,6 +53,6 @@ public class PlantingSpot : MonoBehaviour
     {
         plant.getHarvested -= OnGetHarvested;
         Debug.Log("start growing " + plant.plantData.name);
-        PlantSeed(plant.plantData);
+        PlantSeed(plant.plantData, plantQuality);
     }
 }

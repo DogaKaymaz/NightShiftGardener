@@ -9,14 +9,22 @@ public class InventorySlotUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI itemName;
     [SerializeField] private TextMeshProUGUI itemQuality;
     [SerializeField] private TextMeshProUGUI itemCost;
+    [SerializeField] private Image itemCostResourceVisual;
+    [SerializeField] private TextMeshProUGUI itemAmount;
 
-    public void InitializeSLot(Sprite itemIcon, Sprite itemFrame, string itemName, string itemQuality, string itemCost)
+    public DraggableItem draggableItem;
+    
+    public void InitializeSLot(InventoryItem item, Sprite itemIcon, Sprite itemFrame, string itemName, string itemQuality, string itemCost, Sprite itemCostResourceVisual)
     {
         this.itemIcon.sprite = itemIcon;
         this.itemFrame.sprite = itemFrame;
         this.itemName.SetText(itemName);
         this.itemQuality.SetText(itemQuality);
         this.itemCost.SetText(itemCost);
+        this.itemCostResourceVisual.sprite = itemCostResourceVisual;
+
+        draggableItem.inventoryItem = item;
+        itemAmount.SetText(item.amount.ToString());
     }
     
     public void SetItemIcon(Sprite sprite)

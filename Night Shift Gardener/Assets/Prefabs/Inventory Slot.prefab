@@ -423,6 +423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025992440820795294}
   - component: {fileID: 87985498345395389}
+  - component: {fileID: 8588382391584501959}
   m_Layer: 0
   m_Name: Inventory Slot
   m_TagString: Untagged
@@ -468,6 +469,20 @@ MonoBehaviour:
   itemName: {fileID: 6029578899593801627}
   itemQuality: {fileID: 4474760719007370738}
   itemCost: {fileID: 5464906738017797022}
+  itemCostResourceVisual: {fileID: 3158801840948784549}
+  draggableItem: {fileID: 0}
+--- !u!225 &8588382391584501959
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416828318804541148}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4531653657579782686
 GameObject:
   m_ObjectHideFlags: 0

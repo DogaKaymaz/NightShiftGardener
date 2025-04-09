@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Grapes
   itemIcon: {fileID: 1762179395, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
-  itemQuality: 1
   itemQualityModifier: 2
   itemBasePrice: 35
+  itemPriceResourceType: {fileID: 11400000, guid: b3f695e8ff4f692409c1f3fdff313897, type: 2}
   growStagesSprites:
   - {fileID: 760055110, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
   - {fileID: 531470404, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
@@ -27,4 +27,5 @@ MonoBehaviour:
   decaySprite: {fileID: 0}
   growingTime: 40
   decayTime: 40
+  seedData: {fileID: 11400000, guid: a0b8104f2c34b1c4bb963b9a37584d7d, type: 2}
   resultSprites: []
