@@ -35,7 +35,7 @@ public class CharacterUIManager : MonoBehaviour
 
     private void OnInventoryUpdated(InventoryItem obj)
     {
-        inventoryUI.InitializeInventoryUI(GameManager.mcInventoryManager.ownedItems);
+        inventoryUI.InitializeInventoryUI(GameManager.mcInventoryManager);
     }
 
     private void McResourceManagerOnResourceAmountChanged(ResourceType type, float amount)
@@ -71,7 +71,7 @@ public class CharacterUIManager : MonoBehaviour
     public void OpenInventory()
     {
         inventoryUI.gameObject.SetActive(true);
-        inventoryUI.InitializeInventoryUI(GameManager.mcInventoryManager.ownedItems);
+        inventoryUI.InitializeInventoryUI(GameManager.mcInventoryManager);
     }
     public void CloseInventory()
     {

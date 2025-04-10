@@ -24836,7 +24836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac4ad6c3c37dec4b967d6894aea24cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotPrefab: {fileID: 87985498345395389, guid: 11a94c483ba6a57488c8df9530664282, type: 3}
+  slotPrefab: {fileID: 992840386921983893, guid: d6e74902a29d08744b3cf806d04d1f44, type: 3}
   inventorySlotsParentTransform: {fileID: 936855413060689980}
 --- !u!224 &3630761416846741149
 RectTransform:

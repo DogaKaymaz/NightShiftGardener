@@ -43,7 +43,7 @@ public class ResourceData
         AddResource(type, amount);
     }
 
-    public void ConsumeResource(ResourceType type, float amount)
+    public bool TryConsumeResource(ResourceType type, float amount)
     {
         var resource = resources.FirstOrDefault(x => x.resourceName == type.resourceName);
 
@@ -52,14 +52,14 @@ public class ResourceData
             if (resource.resourceAmount - amount < 0)
             {
                 Debug.Log("no" + type.resourceName +" found to spend");
+                return false;
             }
-            else
-            {
-                resource.resourceAmount -= amount;
-                ResourceAmountChanged?.Invoke(type, resource.resourceAmount);
-                Debug.Log(amount + " " + type.resourceName + " spent.");
-            }
+            resource.resourceAmount -= amount; 
+            ResourceAmountChanged?.Invoke(type, resource.resourceAmount); 
+            Debug.Log(amount + " " + type.resourceName + " spent."); 
+            return true;
         }
+        return false;
     }
 }
 

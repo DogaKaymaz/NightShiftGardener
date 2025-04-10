@@ -34,7 +34,7 @@ public class TradeUI : MonoBehaviour
     public void OpenInventory()
     {
         inventoryUI.gameObject.SetActive(true);
-        inventoryUI.InitializeInventoryUI(trader.GetInventory());
+        inventoryUI.InitializeInventoryUI(trader.GetInventoryManager(), trader);
     }
     public void CloseInventory()
     {

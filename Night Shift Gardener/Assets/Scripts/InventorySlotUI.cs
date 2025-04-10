@@ -1,9 +1,11 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InventorySlotUI : MonoBehaviour
 {
+    private InventoryItem _item;
     [SerializeField] private Image itemIcon;
     [SerializeField] private Image itemFrame;
     [SerializeField] private TextMeshProUGUI itemName;
@@ -13,9 +15,12 @@ public class InventorySlotUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI itemAmount;
 
     public DraggableItem draggableItem;
+    public Action<InventoryItem, int> triedBuyItem;
     
     public void InitializeSLot(InventoryItem item, Sprite itemIcon, Sprite itemFrame, string itemName, string itemQuality, string itemCost, Sprite itemCostResourceVisual)
     {
+        _item = item;
+        
         this.itemIcon.sprite = itemIcon;
         this.itemFrame.sprite = itemFrame;
         this.itemName.SetText(itemName);
@@ -25,6 +30,11 @@ public class InventorySlotUI : MonoBehaviour
 
         if(draggableItem != null) draggableItem.inventoryItem = item; 
         if(itemAmount != null) itemAmount.SetText(item.amount.ToString());
+    }
+
+    public void OnClick()
+    {
+        if(_item != null) triedBuyItem?.Invoke(_item, 1);
     }
     
     public void SetItemIcon(Sprite sprite)

@@ -32,6 +32,7 @@ public class InventoryManager : MonoBehaviour
         if (ownedItem != null && ownedItem.amount >= amount)
         {
             ownedItem.amount -= amount;
+            if (ownedItem.amount == 0) ownedItems.Remove(ownedItem);
             inventoryUpdated?.Invoke(ownedItem);
             return true;
         }

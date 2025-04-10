@@ -7,22 +7,17 @@ public class InventoryUI : MonoBehaviour
     public InventorySlotUI slotPrefab;
     [SerializeField] private Transform inventorySlotsParentTransform;
     
-    private void OnInitialize()
+    private void OnInitialize(InventoryManager inventory, TraderBehaviour trader)
     {
         foreach (Transform child in inventorySlotsParentTransform)
         {
             Destroy(child.gameObject);
         }
-    }
-
-    public void InitializeInventoryUI(List<InventoryItem> inventory)
-    {
-        OnInitialize();
         
-        foreach (InventoryItem item in inventory)
+        foreach (InventoryItem item in inventory.ownedItems)
         {
             ItemQuality itemQuality = item.GetItemQuality();
-            
+
             var itemUI = Instantiate(slotPrefab, inventorySlotsParentTransform);
             itemUI.InitializeSLot(
                 item,
@@ -33,10 +28,20 @@ public class InventoryUI : MonoBehaviour
                 item.itemData.GetItemPrice(itemQuality).ToString(),
                 item.itemData.itemPriceResourceType.icon);
             
-            if (item.amount <= 0)
+            if (trader != null)
             {
-                Destroy(itemUI.gameObject);
+                itemUI.triedBuyItem += trader.Trade;
             }
         }
+    }
+
+    public void InitializeInventoryUI(InventoryManager inventory)
+    {
+        OnInitialize(inventory, null);
+    }
+
+    public void InitializeInventoryUI(InventoryManager inventory, TraderBehaviour trader)
+    {
+        OnInitialize(inventory, trader);
     }
 }

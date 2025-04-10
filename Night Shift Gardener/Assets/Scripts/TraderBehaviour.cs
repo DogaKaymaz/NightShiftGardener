@@ -8,20 +8,17 @@ public class TraderBehaviour : MonoBehaviour
     public Action<InventoryItem> tradeHappened;
     public Action traderInteractedCharacter;
     
-    public bool TryTrade(InventoryItem inventoryItem, InventoryItem id, int amount)
+    public void Trade(InventoryItem item, int amount)
     {
-        if (inventoryManager.TrySpend(id, amount))
-        {
-            tradeHappened?.Invoke(inventoryItem);
-            return true;
-        }
-        
-        return false;
+        if (!GameManager.mcResourceManager.mcResourceData.TryConsumeResource(item.itemData.itemPriceResourceType, amount))
+            return;
+        GameManager.mcInventoryManager.AddItem(item, amount);
+        tradeHappened?.Invoke(item);
     }
 
-    public List<InventoryItem> GetInventory()
+    public InventoryManager GetInventoryManager()
     {
-        return inventoryManager.ownedItems;
+        return inventoryManager;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
