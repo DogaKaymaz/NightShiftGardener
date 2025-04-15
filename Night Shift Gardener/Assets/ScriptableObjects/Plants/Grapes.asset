@@ -27,5 +27,6 @@ MonoBehaviour:
   decaySprite: {fileID: 0}
   growingTime: 40
   decayTime: 40
+  wateringTime: 4
   seedData: {fileID: 11400000, guid: a0b8104f2c34b1c4bb963b9a37584d7d, type: 2}
   resultSprites: []

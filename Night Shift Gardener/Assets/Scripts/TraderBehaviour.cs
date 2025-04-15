@@ -8,9 +8,9 @@ public class TraderBehaviour : MonoBehaviour
     public Action<InventoryItem> tradeHappened;
     public Action traderInteractedCharacter;
     
-    public void Trade(InventoryItem item, int amount)
+    public void Trade(InventoryItem item, int amount, float price)
     {
-        if (!GameManager.mcResourceManager.mcResourceData.TryConsumeResource(item.itemData.itemPriceResourceType, amount))
+        if (!GameManager.mcResourceManager.mcResourceData.TryConsumeResource(item.itemData.itemPriceResourceType, price))
             return;
         GameManager.mcInventoryManager.AddItem(item, amount);
         tradeHappened?.Invoke(item);

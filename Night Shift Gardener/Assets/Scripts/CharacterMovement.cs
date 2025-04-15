@@ -13,9 +13,16 @@ public class CharacterMovement : MonoBehaviour
     private float lastMoveX;
     private float lastMoveY;
 
+    public bool canMove = true;
+
+    private void Start()
+    {
+        canMove = true;
+    }
+
     private void Update()
     {
-        MoveCharacter();
+        if (canMove) MoveCharacter();
     }
 
     private void FixedUpdate()

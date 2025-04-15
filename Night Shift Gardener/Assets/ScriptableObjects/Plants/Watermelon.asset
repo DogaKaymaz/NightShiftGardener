@@ -25,7 +25,8 @@ MonoBehaviour:
   - {fileID: -416799978, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
   - {fileID: 634128143, guid: cd3de0d0622dbee42965319b568268b1, type: 3}
   decaySprite: {fileID: 0}
-  growingTime: 10
+  growingTime: 45
   decayTime: 10
+  wateringTime: 4
   seedData: {fileID: 11400000, guid: a7adb1a5aeb391845804d18fb5f96b00, type: 2}
   resultSprites: []

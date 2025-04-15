@@ -16,7 +16,7 @@ public class OverallUIController : MonoBehaviour
 
     private void OnCharacterExitPlant(GameObject obj)
     {
-        text.enabled = false;
+        if(text != null) text.enabled = false;
     }
 
     private void OnCharacterInteractedPlant(PlantBehaviour plant)

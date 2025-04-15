@@ -15,7 +15,7 @@ public class InventorySlotUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI itemAmount;
 
     public DraggableItem draggableItem;
-    public Action<InventoryItem, int> triedBuyItem;
+    public Action<InventoryItem, int, float> triedBuyItem;
     
     public void InitializeSLot(InventoryItem item, Sprite itemIcon, Sprite itemFrame, string itemName, string itemQuality, string itemCost, Sprite itemCostResourceVisual)
     {
@@ -34,7 +34,7 @@ public class InventorySlotUI : MonoBehaviour
 
     public void OnClick()
     {
-        if(_item != null) triedBuyItem?.Invoke(_item, 1);
+        if(_item != null) triedBuyItem?.Invoke(_item, 1, _item.itemData.GetItemPrice(_item.itemQualityData.itemQuality));
     }
     
     public void SetItemIcon(Sprite sprite)

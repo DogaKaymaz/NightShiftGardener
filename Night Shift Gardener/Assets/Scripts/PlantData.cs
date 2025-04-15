@@ -9,6 +9,8 @@ public class PlantData : ItemData
     
     [SerializeField] private float growingTime;
     [SerializeField] private  float decayTime;
+    
+    public float wateringTime = 5f;
 
     public SeedData seedData;
     

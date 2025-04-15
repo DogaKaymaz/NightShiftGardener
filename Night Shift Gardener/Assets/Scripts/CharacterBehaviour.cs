@@ -10,6 +10,9 @@ public class CharacterBehaviour : MonoBehaviour
     public Action<PlantBehaviour> characterInteractedPlant;
     public Action<TraderBehaviour> characterInteractedTrader;
     
+    
+    public Action<bool, float> characterWatering;
+    
     // private void OnTriggerEnter2D(Collider2D other)
     // {
     //     if (other.TryGetComponent(out InventoryItem item))
@@ -53,7 +56,13 @@ public class CharacterBehaviour : MonoBehaviour
                 _currentPlant.Harvest();
                 return;
             }
-            _currentPlant.Water();
+
+            float posDiff = (int)Mathf.Sign(transform.position.x - _currentPlant.transform.position.x);
+            characterWatering?.Invoke(true, posDiff);
+            StartCoroutine(_currentPlant.StartWatering (() =>
+            {
+                characterWatering?.Invoke(false, posDiff);
+            }));
             characterInteractedPlant?.Invoke(_currentPlant);
             Debug.Log(_currentPlant.plantData.GetItemName() + " watered!");
         }

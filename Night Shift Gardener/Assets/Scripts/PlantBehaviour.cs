@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlantBehaviour : MonoBehaviour
 {
@@ -14,8 +15,10 @@ public class PlantBehaviour : MonoBehaviour
     
     private Coroutine _growingCoroutine;  
     private float _elapsedTime = 0f;
-    private bool _isGrowing = false; 
+    private bool _isGrowing = false;
 
+    [SerializeField] private Image plantProgressionIndicator;
+    [SerializeField] private Image plantWateringIndicator;
     private void Start()
     {
         // spotCharacter.characterSpotted += OnCharacterSpotted;
@@ -28,13 +31,27 @@ public class PlantBehaviour : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    public void Water()
+    public IEnumerator StartWatering(System.Action onComplete)
     {
-        if (!_isGrowing) return;
-        if (isWatered) return;
         
+        if (!_isGrowing || isWatered) yield break;
+
+        float elapsed = 0f;
+        float duration = plantData.wateringTime;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float progress = Mathf.Clamp01(elapsed / duration);
+            plantWateringIndicator.fillAmount = progress;
+
+            yield return null;
+        }
+
+        plantWateringIndicator.fillAmount = 1f;
         growingModifier *= 2;
         isWatered = true;
+        onComplete?.Invoke();
     }
     
     private void OnCharacterSpotted(CharacterBehaviour character)
@@ -70,6 +87,7 @@ public class PlantBehaviour : MonoBehaviour
         float totalTime = plantData.GetGrowingTime(growingModifier);
         float timePerStage = totalTime / totalStages;
         _elapsedTime = 0f;
+        plantProgressionIndicator.fillAmount = 0f;
 
         for (int i = 0; i < totalStages; i++)
         {
@@ -80,10 +98,15 @@ public class PlantBehaviour : MonoBehaviour
             {
                 yield return null;
                 _elapsedTime += Time.deltaTime;
+                
+                float fillProgress = Mathf.Clamp01(_elapsedTime / totalTime);
+                plantProgressionIndicator.fillAmount = fillProgress;
             }
         }
 
-        spriteRenderer.sprite = plantData.growStagesSprites[totalStages - 1];
+        spriteRenderer.sprite = plantData.growStagesSprites[totalStages - 1]; 
+        plantProgressionIndicator.fillAmount = 1f;
+
         isHarvestable = true;
         _isGrowing = false;
     }
