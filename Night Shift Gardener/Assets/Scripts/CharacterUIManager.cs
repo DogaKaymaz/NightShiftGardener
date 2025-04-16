@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CharacterUIManager : MonoBehaviour
 {
     [SerializeField] private InventoryUI inventoryUI;
+    [SerializeField] private GameObject guideUI;
 
     public ResourceType type;
     public Image icon;
@@ -68,8 +69,20 @@ public class CharacterUIManager : MonoBehaviour
         OpenInventory();
     }
     
+    public void ChangeGuideVisibility()
+    {
+        if (!guideUI.activeSelf)
+        {
+            if (inventoryUI.gameObject.activeSelf) CloseInventory();
+            guideUI.SetActive(true);
+            return;
+        }
+        guideUI.SetActive(false);
+    }
+    
     public void OpenInventory()
     {
+        if (guideUI.activeSelf) guideUI.SetActive(false);
         inventoryUI.gameObject.SetActive(true);
         inventoryUI.InitializeInventoryUI(GameManager.mcInventoryManager);
     }
