@@ -1,0 +1,670 @@
+fileFormatVersion: 2
+guid: 580596e91f915a542ac0198b57c0fd56
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2616016434068722692
+    second: rose_trader_idle_spritesheet_0
+  - first:
+      213: 2080158172025298587
+    second: rose_trader_idle_spritesheet_1
+  - first:
+      213: 541419019292759528
+    second: rose_trader_idle_spritesheet_2
+  - first:
+      213: 8992018141113311400
+    second: rose_trader_idle_spritesheet_3
+  - first:
+      213: -7474051550385853823
+    second: rose_trader_idle_spritesheet_4
+  - first:
+      213: -1192506089019036324
+    second: rose_trader_idle_spritesheet_5
+  - first:
+      213: 5445855518846618550
+    second: rose_trader_idle_spritesheet_6
+  - first:
+      213: -358634821843059678
+    second: rose_trader_idle_spritesheet_7
+  - first:
+      213: -8615667610729317586
+    second: rose_trader_idle_spritesheet_8
+  - first:
+      213: 8425087456851697494
+    second: rose_trader_idle_spritesheet_9
+  - first:
+      213: 1658137930885281884
+    second: rose_trader_idle_spritesheet_10
+  - first:
+      213: 5141481699421936316
+    second: rose_trader_idle_spritesheet_11
+  - first:
+      213: 6622337805118773330
+    second: rose_trader_idle_spritesheet_12
+  - first:
+      213: 3239983818882590125
+    second: rose_trader_idle_spritesheet_13
+  - first:
+      213: -5777267587867043138
+    second: rose_trader_idle_spritesheet_14
+  - first:
+      213: 1328219124080945592
+    second: rose_trader_idle_spritesheet_15
+  - first:
+      213: 2278512797875914128
+    second: rose_trader_idle_spritesheet_16
+  - first:
+      213: 2226336062715214455
+    second: rose_trader_idle_spritesheet_17
+  - first:
+      213: -909058716525260638
+    second: rose_trader_idle_spritesheet_18
+  - first:
+      213: 8371175949743091552
+    second: rose_trader_idle_spritesheet_19
+  - first:
+      213: 7353524841861050701
+    second: rose_trader_idle_spritesheet_20
+  - first:
+      213: -3771207122005398959
+    second: rose_trader_idle_spritesheet_21
+  - first:
+      213: -2294272813109176395
+    second: rose_trader_idle_spritesheet_22
+  - first:
+      213: 5751933227649649393
+    second: rose_trader_idle_spritesheet_23
+  - first:
+      213: 4941051872504360282
+    second: rose_trader_idle_spritesheet_24
+  - first:
+      213: 4973358941957233256
+    second: rose_trader_idle_spritesheet_25
+  - first:
+      213: -6012548578805773919
+    second: rose_trader_idle_spritesheet_26
+  - first:
+      213: -6026865344240826429
+    second: rose_trader_idle_spritesheet_27
+  - first:
+      213: 1916466397524166771
+    second: rose_trader_idle_spritesheet_28
+  - first:
+      213: 7209603352526596340
+    second: rose_trader_idle_spritesheet_29
+  - first:
+      213: 6577705838877526629
+    second: rose_trader_idle_spritesheet_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc0fa0beab27ec4085db30c93c6795f
+      internalID: 506040601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 900
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7b21cb2d6e68a4e99bfb4d161e156d
+      internalID: -138348996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 900
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c50ae6f94ca684092aa9213dfaae6e
+      internalID: 1956152461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417d35a86e667bc44a4b26aa4ad8b19b
+      internalID: 345891810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 900
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b600ffc7e5b12740acb6ea876478f3c
+      internalID: 1325415164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89693d7bad9c4c548b183111e67a5204
+      internalID: 2017223476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b466bda1314ecab40984bd0ded86ec0b
+      internalID: -476984878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feaadec7ec1e266489f6f03428b721cd
+      internalID: -833508769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7ee3816e233e7438da1e4b96e81f03
+      internalID: 1979406507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a98ddebb3d37564aafd7bc4b59280d0
+      internalID: 586520002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5deb8e48087315941b5825012ecd6f0a
+      internalID: 1039614046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2d9ad01a2785b4ca6815ff3bd65ebf
+      internalID: -1515881153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b2cec38676ea246a439f9932bb4149
+      internalID: -931591369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998b8c1c97113a9489be548ef5dc71d7
+      internalID: -1003066661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 300
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c8fd67c83f91e44836310df491e590
+      internalID: -646962299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c95f9d895e1214db0b26998e126d73
+      internalID: 1230009206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57500e494d2d2134985d50e2d82496aa
+      internalID: -1357042235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87ed9dde4430064794082624501bb22
+      internalID: 46933480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d53a2670d22ef9449950c8b9a558091
+      internalID: -49108112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rose_trader_idle_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 300
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5472e0e1e959f42a5b675286c27d75
+      internalID: -1640986515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 83978277949e3a146a373d2158969d89
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rose_trader_idle_spritesheet_0: 506040601
+      rose_trader_idle_spritesheet_1: -138348996
+      rose_trader_idle_spritesheet_10: 1039614046
+      rose_trader_idle_spritesheet_11: -1515881153
+      rose_trader_idle_spritesheet_12: -931591369
+      rose_trader_idle_spritesheet_13: -1003066661
+      rose_trader_idle_spritesheet_14: -646962299
+      rose_trader_idle_spritesheet_15: 1230009206
+      rose_trader_idle_spritesheet_16: -1357042235
+      rose_trader_idle_spritesheet_17: 46933480
+      rose_trader_idle_spritesheet_18: -49108112
+      rose_trader_idle_spritesheet_19: -1640986515
+      rose_trader_idle_spritesheet_2: 1956152461
+      rose_trader_idle_spritesheet_3: 345891810
+      rose_trader_idle_spritesheet_4: 1325415164
+      rose_trader_idle_spritesheet_5: 2017223476
+      rose_trader_idle_spritesheet_6: -476984878
+      rose_trader_idle_spritesheet_7: -833508769
+      rose_trader_idle_spritesheet_8: 1979406507
+      rose_trader_idle_spritesheet_9: 586520002
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
